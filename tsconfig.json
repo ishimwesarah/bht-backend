@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  // --- THIS IS THE SIMPLER, CORRECT WAY ---
+  // The 'include' array tells the compiler which files are part of the source.
+  // By including our custom.d.ts file here, it will be globally available.
+   "include": ["src/**/*.ts", "src/custom.d.ts"],
+  "exclude": ["node_modules"]
+}
